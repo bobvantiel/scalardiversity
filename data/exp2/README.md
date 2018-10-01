@@ -1,4 +1,4 @@
 # Exp. 2: Memory load
-* exp2.txt: Data file
-* demo2.txt: Demographics file
-* exp2-script.R: Data analysis file
+* exp2.txt: data file
+* demo2.txt: demographics file
+* exp2-script.R: data analysis file
