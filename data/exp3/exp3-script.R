@@ -18,12 +18,12 @@ library(data.table)
 ###### Mo : <most, all>
 ###### Tr : <try, succeed>
 
-res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp3.txt", 
+res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp3/exp3.txt", 
                            colClasses = c("character", "character", "character", "numeric", 
                                           "character", "character", "character", "character",
                                           "numeric", "numeric")))
 
-demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/demo3.txt"))
+demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp3/demo3.txt"))
 
 ### code whether the responses were correct (only for the control condition)
 
@@ -148,4 +148,3 @@ Mi1 <- lmer(log(RT) ~ RESP + (1 | SUBJECT) + (1 | ITEM), data = tar[tar$SCALE ==
 Tr1 <- lmer(log(RT) ~ RESP + (1 | SUBJECT) + (1 | ITEM), data = tar[tar$SCALE == "Tr",])
 Lo1 <- lmer(log(RT) ~ RESP + (1 | SUBJECT) + (1 | ITEM), data = tar[tar$SCALE == "Lo",])
 Sc1 <- lmer(log(RT) ~ RESP + (1 | SUBJECT) + (1 | ITEM), data = tar[tar$SCALE == "Sc",])
-
