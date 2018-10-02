@@ -21,10 +21,11 @@ library(Kendall)
 ###### Q2 : <most, all>
 ###### V1 : <try, succeed>
 
-res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp1.txt", 
-             colClasses = c("character", "character", "character", "numeric", "character", "character", "numeric", "numeric")))
+res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp1/exp1.txt", 
+             colClasses = c("character", "character", "character", "numeric", 
+                            "character", "character", "numeric", "numeric")))
 
-demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/demo1.txt"))
+demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp1/demo1.txt"))
 
 ### remove first trials and data from the <may, have to> scale, which did not work
 
