@@ -19,11 +19,11 @@ library(data.table)
 ###### Q2 : <most, all>
 ###### V1 : <try, succeed>
 
-res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp2.txt", 
+res <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp2/exp2.txt", 
                            colClasses = c("character", "character", "character", "numeric", "character", 
                                           "character", "numeric", "numeric", "character")))
 
-demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/demo2.txt"))
+demo <- as.data.frame(fread("https://raw.githubusercontent.com/bobvantiel/scalardiversity/master/data/exp2/demo2.txt"))
 
 ### remove first trials and data from the <may, have to> scale for the no load condition
 
